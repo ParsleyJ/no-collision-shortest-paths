@@ -1,0 +1,17 @@
+reset;
+
+model no_encounter.mod;
+data no_encounter.dat;
+
+option solver gurobi;
+solve;
+
+
+for{step in 1..maxTicks}{
+	for{traveller in 1..nTravellers}{
+		printf {(i,j) in DIRECTED_EDGES: useEdge[traveller, step, i, j] = 1} 
+		'At step %d, traveller %d goes from %s to %s.\n', 
+				step, traveller, i, j;
+	}
+	printf '\n';
+}

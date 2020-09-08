@@ -1,0 +1,25 @@
+set NODES := n0, n1, n2, n3, n4, n5, n6;
+
+set EDGES := 
+(n0, n1)
+(n1, n3)
+(n3, n2)
+(n3, n4)
+(n3, n5)
+(n4, n6)
+(n5, n6)
+;
+
+param nTravellers := 2;
+
+param startNodes := 
+1 n5 
+2 n0
+;
+param endNodes := 
+1 n1 
+2 n5
+;
+
+
+param maxTicks := 6;
