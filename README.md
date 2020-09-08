@@ -7,7 +7,7 @@ Let `G` be a graph `(N, E)` where `N` is a given set of nodes and `E` (⊆ N×N)
 
 Find, for each traveller `p`, a path from `s_n(p)` to `e_n(p)`. The found paths must have the following properties.
 
-* The `i`-th node in a path cannot equal to the `i`-th node of another path;
+* The `i`-th node in a path cannot be equal to the `i`-th node of another path;
 * If a traveller uses an edge from node `i` to node `j` at time `t`, no other traveller can use the same edge from node `j` to `i` at the same time `t` (i.e. two travellers cannot use the same edge at the same time in opposite directions);
 * The sum of the lengths of the found paths must be the minimum possible.
 
