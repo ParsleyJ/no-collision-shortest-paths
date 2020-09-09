@@ -15,7 +15,7 @@ Find, for each traveller `p`, a path from `s_n(p)` to `e_n(p)`. The found paths 
 
 ![Graph](graph.png "Graph")
 
-Let's define the graph in a `no_encounter.mod` file and populate the graph of three travellers:
+Let's define the graph in a `no_encounter.dat` file and populate the graph of three travellers:
 
 ```ampl
 # nodes with their names
